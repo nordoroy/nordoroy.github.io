@@ -1,3 +1,73 @@
-{
+* {
+    margin: 0;
+    padding:0;
+}
+.wrapper {
+    width: 100%;
+}
+.img-banner {
+    display: none;
+}
+
+.Lorem-Ipsum {
+    width: 100%;
+}
+.Lorem-Ipsum h2{
+    padding: 30px 40px 20px;
+    font-family: arial, serif;
+    font-size: 50px;
+    color: #111;
+    line-height: normal;
+}
+.Lorem-Ipsum p {
+    padding: 0 40px 20px;
+    font-family: arial, serif;
+    font-size: 16px;
+    color: #111;
+    line-height: 24px;
+}
+.img-pepe {
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    .img-banner {
+        display: block;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .wrapper {
+        width: 600px;
+        margin: 0 auto;
+    }
+    .Lorem-Ipsum h2{
+        padding: 20px 0 0;
+    }
+    .Lorem-Ipsum p {
+        padding: 20px 0 0;
+    }
+    .img-pepe {
+        padding-top: 30px;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width: 1000px;
+    }
+    .Lorem-Ipsum {
+        width: 50%;
+        float: right;
+    }
+    .Lorem-Ipsum h2{
+        padding: 20px 0 0 30px;
+    }
+    .Lorem-Ipsum p {
+        padding: 20px 0 0 30px;
+    }
+    .img-pepe {
+        padding-top: 0;
+        width: 50%;
+        float: left;
+
+    }
 
 }
