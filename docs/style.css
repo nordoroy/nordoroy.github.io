@@ -109,5 +109,31 @@ header .header-important {
 /*HOME*/
 .home-banner {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 100px); /*vh = view height, with calc, remoove the header
+                                   when arriving at home*/
+    background-image: url("img/Plant.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+.home-banner h2 {
+    padding-top: 30px;
+    font-family: Elephant, sans-serif;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    /*text-shadow: 2px 2px 8px <-- BLUR #111111*/
+}
+.home-banner h1 {
+    padding-top: 30px;
+    font-family: Daytona, serif;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 8px  #111111;
 }
