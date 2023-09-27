@@ -79,6 +79,7 @@ header {
     height: 100px;
 }
 header .header-name {
+    background-image: url("img/Banner.png");
     font-family: Elephant, serif;
     font-size: 24px;
     color: #111111;
@@ -136,4 +137,34 @@ header .header-important {
     color: white;
     text-align: center;
     text-shadow: 2px 2px 8px  #111111;
+}
+body {
+    display: flex;
+    gap: 1em;
+    margin: 2em;
+}
+.blob {
+    width: 5rem;
+    aspect-ratio: 1 / 1;
+    background-color: #abdafc;
+    background-image: url("https://unsplash.it/100/100");
+    border: 1px solid black;
+    /*                           x   y */
+    border-top-left-radius:     10% 50%;
+    border-top-right-radius:    50% 10%;
+    border-bottom-right-radius: 10% 50%;
+    border-bottom-left-radius:  50% 10%;
+    /* x versatz, y versatz, blur, strat color*/
+    box-shadow: .2em 0 .5em black;
+    transition: .2s linear;
+
+}
+.blob:hover {
+    border-top-left-radius:     10% 50%;
+    border-top-right-radius:    10% 50%;
+    border-bottom-right-radius: 10% 50%;
+    border-bottom-left-radius:  10% 50%;
+    transform: translateY(-5%)scale(1.2);
+    box-shadow: .2em 0 .8em black;
+    transition:.2s linear;
 }
